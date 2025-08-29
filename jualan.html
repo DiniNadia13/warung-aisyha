@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kios Aisyha — Es • Kopi • Pentol • Sembako</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: linear-gradient(135deg, #ffe259, #3a7bd5);
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.7);
+      border-bottom: 2px solid #ddd;
+    }
+    header img {
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #475569;
+    }
+    main {
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.7);
+    }
+    footer a {
+      color: #0ea5e9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .wa-btn {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .qr-box {
+      margin-top: 15px;
+    }
+    .qr-box img {
+      width: 150px;
+      border: 6px solid white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="warung.png.png" alt="Ilustrasi Kios Aisyha" width="400">
+    <p>Es Segar • Kopi • Pentol Lengkap • Sembako — Siap Antar 🚚</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Minuman Segar 🧊</h2>
+      <p>•Es Kopi<br>•Es Susu<br>•Es Nutrisari<br>•Pop Ice segala macam rasa</p>
+    </div>
+
+    <div class="card">
+      <h2>Pentol Pilihan 🍡</h2>
+      <p>•Pentol Keju<br>•Pentol Jamur<br>•Pentol Daging<br>•Pentol Telur Puyuh<br>•Pentol Ikan<br>•Pentol Ayam<br>•Tahu<br>Diolah dengan bumbu spesial dijamin nagih lumer dimulut</p>
+    </div>
+
+    <div class="card">
+      <h2>Sembako Lengkap 🍚</h2>
+      <p>•Beras<br>•Minyak<br>•Gula<br>•Telur<br>•Mie Instan<br>•Bumbu Dapur<br>•Sabun<br>•Detergen<br>•Dan lain-lain.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hubungi kami: <a href="tel:+6282154306904">0821-5430-6904</a></p>
+    <a class="wa-btn" href="https://wa.me/6282154306904?text=Halo%20Kios%20Aisyha%2C%20saya%20mau%20pesan" target="_blank">💬 Chat via WhatsApp</a>
+
+    <div class="qr-box">
+      <p>Scan untuk pesan via WhatsApp:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/6282154306904" alt="QR WhatsApp Kios Aisyha">
+    </div>
+
+    <p>© <span id="year"></span> Kios Aisyha</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
